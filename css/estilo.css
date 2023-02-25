@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #ccc;
+}
+
+.estiloLink {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+}
+
+.estiloNav {
+    background-color: #3A1078;
+}
+
+/* -------------------------------------------------- */
+
+/* estilos de tamaño al carrusel */
+
+
+
+.estilosCarrusel {
+    height: 350px;
+    width: 1350px;
+}
+
+header {
+    padding: 25px;
+}
+
+/* -------------------------------- */
+
+/* estilo de titulo en index */
+
+.titulo-productos {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3A1078;
+    padding: 15px;
+    color: white;
+}
+
+.titulo-productos img {
+    width: 40px;
+}
+
+/* ----------------------------------------- */
+
+/* dondele extilo a los productos que salen al inicio */
+
+.titulo-baratos {
+    margin-top: 20px;
+}
+
+
+.titulo-baratos span{
+    padding: 10px;
+    border: solid 2px #3A1078;
+    margin-left: 25px;
+}
+
+.productosBaratos {
+    margin-top: 20px;
+    height: 400px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-tarjetas {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.productosBaratos-hijo img{
+    width: 300px;
+}
+
+/* editando tarjetas */
+
+.tarjetas {
+    margin: 10px;
+}
+
+.tarjeta-img {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta-img img{
+    width: 150px;
+}
+
+.tarjeta-text {
+    text-align: center;
+}
+
+.tarjeta-text span{
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.tarjeta-central {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.productos img {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+/* -------------------------------- */
+
+
+.main-index {
+    margin-top: 50px;
+}
+
+
+.productos {
+    background-color: #2F58CD;
+    /* height: 300px; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 1px;
+}
+
+.productos span {
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: aliceblue;
+    border: solid 1px black;
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+
+/* aun en la web principal le dare estilo a los productos de oferta  */
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px green;
+}
+
+.publicidad img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+}
+
+.publicidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    top: 50px;
+    background-color: #2F58CD;
+    height: 200px;
+}
+
+.publicidad p {
+    width: 400px;
+    text-transform: uppercase;
+}
+
+
+/* -------------------------------------------- */
+
+/* footer*/
+
+footer {
+    padding: 20px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3795BD;
+    color: white;
+}
+
+
+
+.redes P {
+    font-size: 2em;
+    text-align: left;
+    border-bottom: solid grey 2px;
+}
+
+.redes {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.redes p {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes li{
+    margin-right: 15px;
+    display: inline;
+    list-style-type: none;
+}
+
+.menu-inferior li{
+    list-style-type: none;
+    border-bottom: solid grey 1px;
+}
+
+.menu-inferior a {
+    color: white;
+    text-decoration: none;
+    text-align: start;
+}
+
+.menu-inferior ul {
+    padding: 0;
+}
+
+.footer-text {
+    margin: 20px;
+    width: 300px;
+}
+
+/*---------------------------------------------------------  */
+
+/* estilos input en la pestaña de Contactos */
+
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.caja {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ---------------------------------------------------- */
+
+
+
+/* filtro de la pagina productos */
+
+.filtro {
+    color: white;
+    background-color: #45a049;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 3px black;
+}
+
+.filtro div {
+    margin-left: 10px;
+}
+
+/* posicionando la tienda en productos */
+
+.main-productos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tienda {
+    margin-left: 20px ;
+}
+
+/* DANDOLE ESTILO AL VIDEO */
+
+.video {
+    margin-top: 50px;
+    height: 400px;
+    background-color:#2F58CD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video p {
+    position: relative;
+    bottom: 20px;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 1px black;
+}
+
+/* ---------------------------------- */
+
+/* Estilos de los blog */
+
+.imagen-blog {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+.imagen-blog img {
+    width: 100%;
+    height: 400px;
+}
+
+.span-blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.dos {
+    font-size: 40px;
+    color: lightseagreen;
+}
+
+.tres {
+    font-style: italic
+}
+
+/* en este contenedor queria probar otro tipo de posicionamiento
+   se que este es el que mas da problemas pero en un futuro lo ire cambiando solo quiero ir probando todos los metodos */
+
+.contenedor {
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: black;
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+}
+
+.imagen-one img {
+    width: 300px;
+    height: 300px;
+}
+
+.contenedor-flex img {
+    width: 300px;
+    height: 150px;
+}
+
+.span-blog button a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.span-blog button {
+    border: inset 3px lightseagreen;
+    background-color: black;
+}
+
+/* ---------------------------------------- */
+
+/* estilos de la pagina map */
+
+.main-mapa {
+    background-color: bisque;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: inset 5px green;
+}
+
+.contenedor-map {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+    text-align: left;
+    width: 60%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-map img {
+    position: relative;
+    left: 100px;
+    width: 200px;
+    height: auto;
+
+}
+
+.contenedor-map h2 {
+    text-transform: uppercase;
+    color: lightseagreen;
+    position: relative;
+    bottom: 30px;
+}
+
+.contenedor-map div {
+    font-size: 20px;
+    width: 400px;
+}
+
+.mapa {
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    background-color: #04AA6D;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.mapa div {
+    width: 400px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .titulo-baratos {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productosBaratos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-tarjetas {
+        padding: 10px;
+    }
+
+    .tarjeta-img img{
+        width: 100px;
+    }
+
+    .productosBaratos-hijo img{
+        width: 200px;
+    }
+    
+
+    .tarjeta-text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    .tarjeta-text span{
+        font-size: 0.5rem;
+        color: grey;
+    }
+    
+    .tarjeta-central {
+        text-align: center;
+
+    }
+
+    /* configurando el main */
+
+    .main-index {
+        padding: 0;
+        margin-top: 70px;
+        font-size: 0.9rem;
+    }
+    
+    .productos span {
+        width: 100px;
+        height: 200px;
+    }
+
+    .productos img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .publicidad img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+
+    /* pagina productos */
+
+    .main-productos {
+        flex-direction: column;
+    }
+
+    .filtro {
+        width: auto;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 3px black;
+    }
+
+    .filtro  div {
+        display: inline;
+    }
+
+    .tienda {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .video iframe{
+        width: 500px;
+    }
+}
+
+@media (min-width: 601px ) and (max-width: 900px){
+
+    .tarjeta-text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .titulo-baratos {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .productosBaratos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .div-tarjetas {
+        padding: 10px;
+    }
+
+    .tarjeta-img img{
+        width: 100px;
+    }
+
+    .productosBaratos-hijo img{
+        width: 200px;
+    }
+    
+
+    .tarjeta-text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    .tarjeta-text span{
+        font-size: 0.5rem;
+        color: grey;
+    }
+    
+    .tarjeta-central {
+        text-align: center;
+
+    }
+
+    /* configurando el main */
+
+    .main-index {
+        padding: 0;
+        margin-top: 70px;
+        font-size: 0.9rem;
+    }
+    
+    .productos span {
+        width: 120px;
+        height: 200px;
+    }
+
+    .productos img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .publicidad {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .publicidad img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width:601px) and (max-width: 1155px){
+
+    .main-productos {
+        flex-direction: column;
+    }
+
+    .filtro {
+        width: auto;
+
+    }
+
+    .filtro  div {
+        display: inline;
+    }
+
+    .tienda {
+        margin: 0;
+    }
+}
+
+
+
