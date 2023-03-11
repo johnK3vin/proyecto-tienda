@@ -25,9 +25,6 @@ body {
 /* estilos de tamaño al carrusel */
 
 
-
-
-
 header {
     padding: 25px;
 }
@@ -52,8 +49,11 @@ header {
 
 /* dondele extilo a los productos que salen al inicio */
 
+
+
 .titulo-baratos {
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -110,10 +110,20 @@ header {
     text-transform: uppercase;
 }
 
+.buttom-tarjetas button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
 .productos img {
     width: 200px;
     height: 200px;
+    border-radius: 5px;
 }
+
+
+
 
 
 
@@ -122,25 +132,24 @@ header {
 
 
 .main-index {
-    margin-top: 50px;
+    padding: 24px;
 }
 
 
 .productos {
-    background-color: #2F58CD;
-    /* height: 300px; */
     display: flex;
     justify-content:space-around;
     align-items: center;
-    border-radius: 1px;
+    margin-bottom: 20px;
 }
 
-.productos span {
+.productos div {
     border-radius: 5px;
     margin-top: 5px;
     background-color: aliceblue;
-    border: solid 1px black;
+    text-align: center;
 }
+
 
 
 
@@ -169,14 +178,28 @@ header {
     align-items: center;
     border-radius: 5px;
     position: relative;
-    top: 50px;
-    background-color: #2F58CD;
+    background-color: #bac8ed;
     height: 200px;
 }
 
 .publicidad p {
     width: 400px;
     text-transform: uppercase;
+}
+
+.publicidad button {
+    border: none;
+}
+
+.publicidad-textUno {
+    color: brown;
+    font-size: 2rem;
+    text-shadow: 0 1px 3px black;
+}
+
+.publicidad-textDos {
+    font-size: 1.2rem;
+    
 }
 
 
@@ -187,7 +210,6 @@ header {
 footer {
     padding: 20px;
     position: relative;
-    top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -251,14 +273,48 @@ footer {
 
 /* estilos input en la pestaña de Contactos */
 
+.main-contactos {
+    max-width: 1550px;
+}
+
+.presentacion-contactos {
+    position: relative;
+    display: inline-block;
+}
+
+.presentacion-animacion {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactos-animacionUno{
+    background-color: red;
+    color: white;
+}
+
+.contactos-animacionDos {
+    background-color: #3795BD;
+}
+
+.container-contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 input[type=text], select, textarea {
-    width: 90%;
+    width: 70%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  
+}
+
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -271,7 +327,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    float: right;
+
 }
 
 input[type=submit]:hover {
@@ -279,6 +335,7 @@ input[type=submit]:hover {
 }
 
 .caja {
+    width: 400px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -291,8 +348,7 @@ input[type=submit]:hover {
 }
   
 .col-2 {
-    float: left;
-    width: 75%;
+    width: 100%;
     margin-top: 6px;
 }
 
@@ -310,28 +366,44 @@ input[type=submit]:hover {
 /* filtro de la pagina productos */
 
 .filtro {
+    padding: 20px;
+    background-color: #2F58CD;
     color: white;
-    background-color: #45a049;
-    width: 150px;
     border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 3px black;
+    margin-right: 10px;
 }
 
-.filtro div {
-    margin-left: 10px;
-}
 
-/* posicionando la tienda en productos */
-
-.main-productos {
-    display: flex;
+.resultados {
+    display: flex;  
     justify-content: space-around;
 }
 
-.tienda {
-    margin-left: 20px ;
+.button-filtro {
+    border: none;
 }
+
+
+/* posicionando la tienda en productos */
+/* nuevos estilos a esta pagina */
+
+.main-productos {
+    padding-top: 88px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 96px;
+}
+
+.containerProductos {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.container-productos {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* DANDOLE ESTILO AL VIDEO */
 
@@ -396,18 +468,11 @@ input[type=submit]:hover {
    se que este es el que mas da problemas pero en un futuro lo ire cambiando solo quiero ir probando todos los metodos */
 
 .contenedor {
-    position: relative;
-    /* top: 50%; */
-    left: 50%;
-    transform: translate(-50%, 0%);
     background-color: black;
-    width: 70%;
-    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
-    margin: 5px;
 }
 
 .imagen-one img {
@@ -438,30 +503,23 @@ input[type=submit]:hover {
 
 .main-mapa {
     background-color: bisque;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 50px;
     border: inset 5px green;
 }
 
 .contenedor-map {
-    position: relative;
-    left: 50%;
+    /* position: relative;
+    left: 50%; 
     top: 50%;
-    transform: translate(-50%, 10%);
-    text-align: left;
-    width: 60%;
-    height: 250px;
+    transform: translate(-50%, 10%); */
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .contenedor-map img {
-    position: relative;
-    left: 100px;
-    width: 200px;
+    width: 350px;
     height: auto;
-
 }
 
 .contenedor-map h2 {
@@ -471,27 +529,29 @@ input[type=submit]:hover {
     bottom: 30px;
 }
 
-.contenedor-map div {
-    font-size: 20px;
-    width: 400px;
-}
+
 
 .mapa {
-    border-radius: 5px;
     box-shadow: 0 0 10px black;
     background-color: #04AA6D;
-    position: relative;
-    left: 100px;
-    top: 50px;
-    width: 80%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
+    margin: 0px auto;
 }
 
-.mapa div {
-    width: 400px;
+.contenedor-mapaDos {
+    display: flex;
+    justify-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-map {
+    font-size: 1.3rem;
+    padding: 20px;
+    background-color: #45a049;
 }
 
 
@@ -561,11 +621,19 @@ input[type=submit]:hover {
 
     .publicidad {
         display: flex;
-        flex-direction: column;
+        flex-direction: center;
     }
 
     .publicidad img {
         width: 100px;
+    }
+
+    .publicidad-textUno {
+        font-size: 1.4rem;
+    }
+
+    .publicidad-textDos {
+        font-size: 0.8rem;
     }
 
     footer {
@@ -574,9 +642,11 @@ input[type=submit]:hover {
 
     /* pagina productos */
 
-    .main-productos {
+    .container-productos{
+        display: flex;
         flex-direction: column;
     }
+
 
     .filtro {
         width: auto;
@@ -597,9 +667,55 @@ input[type=submit]:hover {
     .video iframe{
         width: 500px;
     }
+
+    /* pagina de mapa */
+
+    .contenedor-map {
+        flex-direction: column;
+    }
+
+    .contenedor-mapaDos{
+        padding: 0;
+    }
+
+    .mapa {
+        flex-direction: column;
+    }
+
+    .mapa iframe{
+        width: 300px;
+        height: 200px;
+    }
+
+
+    /* pagina de contactos */
+
+
+    .container-contactos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja {
+        border: solid greenyellow 2px;
+    }
+
+
+    /* pagina de blog */
+
+    
+    .imagen-one img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .contenedor-flex img {
+        width: 100px;
+        height: 75px;
+    }
 }
 
-@media (min-width: 601px ) and (max-width: 900px){
+@media (min-width: 601px ) and (max-width: 915px){
 
     .tarjeta-text {
         text-align: center;
@@ -657,34 +773,81 @@ input[type=submit]:hover {
         font-size: 0.9rem;
     }
     
-    .productos span {
+    .productos div img{
         width: 120px;
         height: 200px;
     }
 
-    .productos img {
-        width: 100px;
-        height: 120px;
-    }
+
 
     .publicidad {
         display: flex;
-        flex-direction: column;
+        flex-direction: center;
     }
 
     .publicidad img {
-        width: 100px;
+        width: 200px;
     }
 
     footer {
         font-size: 0.7rem;
     }
+
+    /* pagina de mapa */
+    
+    .contenedor-map img {
+        width: 250px;
+        height: auto;
+    }
+    
+    .contenedor-map h2 {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        color: lightseagreen;
+        position: relative;
+        bottom: 30px;
+    }
+    
+    
+    
+    .mapa {
+        flex-direction: column;
+    }
+
+    .mapa iframe{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .contenedor-mapaDos {
+        padding: 10px;
+    }
+
+    /* pagina de blog  */
+
+    .contenedor {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .imagen-one img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .contenedor-flex img {
+        width: 150px;
+        height: 100px;
+    }
+    
+
 }
 
 
-@media (min-width:601px) and (max-width: 1155px){
+@media (min-width:601px) and (max-width: 1300px){
 
-    .main-productos {
+    .container-productos{
+        display: flex;
         flex-direction: column;
     }
 
@@ -700,6 +863,25 @@ input[type=submit]:hover {
     .tienda {
         margin: 0;
     }
+
+    .productos img{
+        width: 150px;
+    }
+
+    /* pagina de contactos */
+
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width:901px) and (width:1560px) {
+    
+    .menuContactos img {
+        width: 600px;
+    }
+
 }
 
 

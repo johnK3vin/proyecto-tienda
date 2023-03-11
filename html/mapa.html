@@ -33,10 +33,13 @@
                     <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="contactos.html">contactos</a>
+                        <a class="nav-link" href="mapa.html">Mapa</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="blog.html">blog</a>
+                    <a class="nav-link" href="contactos.html">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -47,22 +50,32 @@
     <main class="main-mapa">
         <div class="contenedor-map">
             <div>
+                <img src="../img/map-localizacion.png" alt="mouse">
+            </div>
+            <div>
                 <div>
                     <h2>Ubica nuestras tiendas</h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ab provident distinctio? Dolorum quis aliquid incidunt error sint distinctio reiciendis, quasi unde ex, quaerat, et cum velit quia sequi ea.</p>
+                    <p>encuentra la socursal mas sercana para comprar o si deseas puedes realizar envios a tal socursal nosostros nos aseguramos de guardar tu productos por 2 semanas.</p>
                 </div>
             </div>
-            <div>
-                <img src="../img/mouse-fondo.jpg" alt="mouse">
-            </div>
         </div>
-        
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52298.2665860229!2d-70.7184170417969!3d-33.4406397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a18267c5e7%3A0x2e9d3b27ff0e4149!2spc%20Factory!5e1!3m2!1ses!2scl!4v1675536928963!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsum sed blanditiis officia quos nemo! Libero provident ipsa sequi sapiente! Et accusamus inventore rem adipisci minus repellendus veniam dolores asperiores.</p>
+        <br><br>
+        <div class="contenedor-mapaDos">
+            <div class="mapa rounded-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52298.2665860229!2d-70.7184170417969!3d-33.4406397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a18267c5e7%3A0x2e9d3b27ff0e4149!2spc%20Factory!5e1!3m2!1ses!2scl!4v1675536928963!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                <form class="form-map rounded-1">
+                    <label for="comuna">Region</label>
+                    <select name="selector-comuna" >
+                        <option value="maule">Maule</option>
+                        <option value="biobio">Biobio</option>
+                        <option value="maule">La Araucania</option>
+                        <option value="biobio">Los Rios</option>
+                        <option value="maule">Aysen</option>
+                        <option value="biobio">Magallanes</option>
+                    </select>
+                </form> 
             </div>
         </div>
     </main>
