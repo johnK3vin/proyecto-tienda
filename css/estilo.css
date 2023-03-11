@@ -1,888 +1,728 @@
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-body {
-    font-family: 'Playfair Display', serif;
-    background-color: #ccc;
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: "Playfair Display", serif;
+  background-color: #ccc;
+}
+html body header {
+  padding: 25px;
+}
+html body button {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+html body footer {
+  font-size: 0.7rem;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3795BD;
+  color: white;
 }
 
 .estiloLink {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-size: 2rem;
 }
 
 .estiloNav {
-    background-color: #3A1078;
-}
-
-/* -------------------------------------------------- */
-
-/* estilos de tamaño al carrusel */
-
-
-header {
-    padding: 25px;
-}
-
-/* -------------------------------- */
-
-/* estilo de titulo en index */
-
-.titulo-productos {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #3A1078;
-    padding: 15px;
-    color: white;
-}
-
-.titulo-productos img {
-    width: 40px;
-}
-
-/* ----------------------------------------- */
-
-/* dondele extilo a los productos que salen al inicio */
-
-
-
-.titulo-baratos {
-    display: flex;
-    justify-content: center;
-}
-
-
-.titulo-baratos span{
-    padding: 10px;
-    border: solid 2px #3A1078;
-    margin-left: 25px;
-}
-
-.productosBaratos {
-    margin-top: 20px;
-    height: 400px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.div-tarjetas {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.productosBaratos-hijo img{
-    width: 300px;
-}
-
-/* editando tarjetas */
-
-.tarjetas {
-    margin: 10px;
-}
-
-.tarjeta-img {
-    display: flex;
-    justify-content: center;
-}
-
-.tarjeta-img img{
-    width: 150px;
-}
-
-.tarjeta-text {
-    text-align: center;
-}
-
-.tarjeta-text span{
-    font-size: 0.9rem;
-    color: grey;
-}
-
-.tarjeta-central {
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.buttom-tarjetas button {
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-}
-
-.productos img {
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-/* -------------------------------- */
-
-
-.main-index {
-    padding: 24px;
-}
-
-
-.productos {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.productos div {
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: aliceblue;
-    text-align: center;
-}
-
-
-
-
-/* ----------------------------------------------------------- */
-
-
-/* aun en la web principal le dare estilo a los productos de oferta  */
-
-.titulo {
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 0 2px green;
-}
-
-.publicidad img{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    float: left;
-}
-
-.publicidad {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 5px;
-    position: relative;
-    background-color: #bac8ed;
-    height: 200px;
-}
-
-.publicidad p {
-    width: 400px;
-    text-transform: uppercase;
-}
-
-.publicidad button {
-    border: none;
-}
-
-.publicidad-textUno {
-    color: brown;
-    font-size: 2rem;
-    text-shadow: 0 1px 3px black;
-}
-
-.publicidad-textDos {
-    font-size: 1.2rem;
-    
-}
-
-
-/* -------------------------------------------- */
-
-/* footer*/
-
-footer {
-    padding: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #3795BD;
-    color: white;
-}
-
-
-
-.redes P {
-    font-size: 2em;
-    text-align: left;
-    border-bottom: solid grey 2px;
+  background-color: #3A1078;
 }
 
 .redes {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
-
+.redes P {
+  font-size: 2em;
+  text-align: left;
+  border-bottom: solid grey 2px;
+}
 .redes p {
-    text-align: left;
-    margin-top: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+.redes a {
+  text-decoration: none;
+  color: white;
+}
+.redes li {
+  margin-right: 15px;
+  display: inline;
+  list-style-type: none;
 }
 
-.redes a{
-    text-decoration: none;
-    color: white;
+.menu-inferior li {
+  list-style-type: none;
+  border-bottom: solid grey 1px;
 }
-
-.redes li{
-    margin-right: 15px;
-    display: inline;
-    list-style-type: none;
-}
-
-.menu-inferior li{
-    list-style-type: none;
-    border-bottom: solid grey 1px;
-}
-
 .menu-inferior a {
-    color: white;
-    text-decoration: none;
-    text-align: start;
+  color: white;
+  text-decoration: none;
+  text-align: start;
 }
-
 .menu-inferior ul {
-    padding: 0;
+  padding: 0;
 }
 
 .footer-text {
-    margin: 20px;
-    width: 300px;
+  margin: 20px;
+  width: 300px;
 }
 
-/*---------------------------------------------------------  */
+.titulo-productos {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #3A1078;
+  padding: 15px;
+  color: white;
+}
+.titulo-productos img {
+  width: 40px;
+}
 
-/* estilos input en la pestaña de Contactos */
+.titulo-baratos {
+  display: flex;
+  justify-content: center;
+}
+.titulo-baratos span {
+  padding: 10px;
+  border: solid 2px #3a1078;
+  margin-left: 25px;
+}
+
+.productosBaratos {
+  margin-top: 20px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.div-tarjetas {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.productosBaratos-hijo img {
+  width: 300px;
+}
+
+.tarjetas {
+  margin: 10px;
+}
+
+.tarjeta-img {
+  display: flex;
+  justify-content: center;
+}
+.tarjeta-img img {
+  width: 150px;
+}
+
+.tarjeta-text {
+  text-align: center;
+}
+.tarjeta-text span {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.tarjeta-central {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttom-tarjetas button {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.productos img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+.productos div {
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+.main-index {
+  padding: 24px;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px green;
+}
+
+.publicidad {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  background-color: #bac8ed;
+  height: 200px;
+}
+.publicidad img {
+  width: 200px;
+  height: 200px;
+}
+.publicidad p {
+  width: 200px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.publicidad button {
+  border: none;
+  padding: 0;
+}
+
+.publicidad-textUno {
+  color: brown;
+  font-size: 2rem;
+  text-shadow: 0 1px 3px black;
+}
+
+.publicidad-textDos {
+  font-size: 1.2rem;
+}
 
 .main-contactos {
-    max-width: 1550px;
+  max-width: 1550px;
 }
 
 .presentacion-contactos {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .presentacion-animacion {
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.contactos-animacionUno{
-    background-color: red;
-    color: white;
+.horario {
+  background-color: red;
+  color: white;
+  padding: 2rem;
 }
-
-.contactos-animacionDos {
-    background-color: #3795BD;
+.horario h3 {
+  color: #3A1078;
+}
+.horario .telefono a {
+  text-decoration: none;
+  color: white;
 }
 
 .container-contactos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-input[type=text], select, textarea {
-    width: 70%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+input[type=text] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+select {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
 label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
 input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .caja {
-    width: 400px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .col-1 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-  
-.col-2 {
-    width: 100%;
-    margin-top: 6px;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
+.col-2 {
+  width: 100%;
+  margin-top: 6px;
+}
 
 .fila:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-
-/* ---------------------------------------------------- */
-
-
-
-/* filtro de la pagina productos */
 
 .filtro {
-    padding: 20px;
-    background-color: #2F58CD;
-    color: white;
-    border-radius: 5px;
-    margin-right: 10px;
+  padding: 20px;
+  background-color: #2F58CD;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
 }
-
 
 .resultados {
-    display: flex;  
-    justify-content: space-around;
+  display: flex;
+  justify-content: center;
+}
+.resultados button {
+  border: none;
+  padding: 0;
+}
+.resultados button:active {
+  background-color: black;
 }
 
-.button-filtro {
-    border: none;
+.filtro-hijo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-/* posicionando la tienda en productos */
-/* nuevos estilos a esta pagina */
+.filtro-input {
+  display: flex;
+  justify-content: start;
+}
+.filtro-input label {
+  margin-left: 20px;
+}
+.filtro-input select {
+  padding: 0;
+  width: 100px;
+}
 
 .main-productos {
-    padding-top: 88px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 96px;
+  padding-top: 88px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 96px;
 }
 
 .containerProductos {
-    padding-left: 24px;
-    padding-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .container-productos {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-
-/* DANDOLE ESTILO AL VIDEO */
 
 .video {
-    margin-top: 50px;
-    height: 400px;
-    background-color:#2F58CD;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin-top: 50px;
+  height: 400px;
+  background-color: #2F58CD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .video p {
-    position: relative;
-    bottom: 20px;
-    font-size: 1.5em;
-    color: white;
-    text-shadow: 0 0 1px black;
+  position: relative;
+  bottom: 20px;
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 0 0 1px black;
 }
-
-/* ---------------------------------- */
-
-/* Estilos de los blog */
 
 .imagen-blog {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    height: 400px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 400px;
 }
-
 .imagen-blog img {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .span-blog {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.span-blog button {
+  border: inset 3px lightseagreen;
+  background-color: black;
+}
+.span-blog button a {
+  text-decoration: none;
+  color: red;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .text {
-    font-size: 20px;
-    padding: 5px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .dos {
-    font-size: 40px;
-    color: lightseagreen;
+  font-size: 40px;
+  color: lightseagreen;
 }
 
 .tres {
-    font-style: italic
+  font-style: italic;
 }
 
-/* en este contenedor queria probar otro tipo de posicionamiento
-   se que este es el que mas da problemas pero en un futuro lo ire cambiando solo quiero ir probando todos los metodos */
-
 .contenedor {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .imagen-one img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .contenedor-flex img {
-    width: 300px;
-    height: 150px;
+  width: 300px;
+  height: 150px;
 }
-
-.span-blog button a{
-    text-decoration: none;
-    color: red;
-    font-size: 20px;
-    padding: 5px;
-}
-
-.span-blog button {
-    border: inset 3px lightseagreen;
-    background-color: black;
-}
-
-/* ---------------------------------------- */
-
-/* estilos de la pagina map */
 
 .main-mapa {
-    background-color: bisque;
-    padding: 50px;
-    border: inset 5px green;
+  background-color: bisque;
+  padding: 50px;
+  border: inset 5px green;
 }
 
 .contenedor-map {
-    /* position: relative;
-    left: 50%; 
-    top: 50%;
-    transform: translate(-50%, 10%); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenedor-map img {
+  width: 350px;
+  height: auto;
+}
+.contenedor-map h2 {
+  text-transform: uppercase;
+  color: lightseagreen;
+  position: relative;
+  bottom: 30px;
+}
+
+.mapa {
+  box-shadow: 0 0 10px black;
+  background-color: #04AA6D;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+.contenedor-mapaDos {
+  display: flex;
+  justify-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-map {
+  font-size: 1.3rem;
+  padding: 20px;
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .titulo-baratos {
+    margin: 0;
     display: flex;
+    justify-content: center;
+  }
+  .productosBaratos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+  .div-tarjetas {
+    padding: 10px;
+  }
+  .tarjeta-img img {
+    width: 100px;
+  }
+  .productosBaratos-hijo img {
+    width: 200px;
+  }
+  .tarjeta-text {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .tarjeta-text span {
+    font-size: 0.5rem;
+    color: grey;
+  }
+  .tarjeta-central {
+    text-align: center;
+  }
+  .main-index {
+    padding: 0;
+    margin-top: 70px;
+    font-size: 0.9rem;
+  }
+  .productos img {
+    width: 80px;
+    height: 100px;
+  }
+  .publicidad {
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+  }
+  .publicidad img {
+    width: 200px;
+  }
+  .publicidad div {
+    width: 400px;
+  }
+  .publicidad-textUno {
+    font-size: 1.4rem;
+  }
+  .publicidad-textDos {
+    font-size: 0.8rem;
+  }
+  .container-productos {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtro {
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 3px black;
+  }
+  .filtro div {
+    display: inline;
+  }
+  .tienda {
+    margin: 0;
+    flex-direction: column;
+  }
+  .video iframe {
+    width: 500px;
+  }
+  .contenedor-map {
+    flex-direction: column;
+  }
+  .contenedor-mapaDos {
+    padding: 0;
+  }
+  .mapa {
+    flex-direction: column;
+  }
+  .mapa iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .container-contactos {
+    display: flex;
+    flex-direction: column;
+  }
+  .caja {
+    border: solid greenyellow 2px;
+  }
+  .imagen-one img {
+    width: 150px;
+    height: 150px;
+  }
+  .contenedor-flex img {
+    width: 100px;
+    height: 75px;
+  }
 }
-
-.contenedor-map img {
-    width: 350px;
+@media (min-width: 601px) and (max-width: 915px) {
+  .tarjeta-text {
+    text-align: center;
+    font-size: 0.9rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .tarjeta-text span {
+    font-size: 0.5rem;
+    color: grey;
+  }
+  .titulo-baratos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .productosBaratos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .div-tarjetas {
+    padding: 10px;
+  }
+  .tarjeta-img img {
+    width: 100px;
+  }
+  .productosBaratos-hijo img {
+    width: 200px;
+  }
+  .tarjeta-central {
+    text-align: center;
+  }
+  .main-index {
+    padding: 0;
+    margin-top: 70px;
+    font-size: 0.9rem;
+  }
+  .productos div img {
+    width: 120px;
+    height: 200px;
+  }
+  .publicidad {
+    display: flex;
+    flex-direction: center;
+  }
+  .publicidad img {
+    width: 200px;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  .contenedor-map img {
+    width: 250px;
     height: auto;
-}
-
-.contenedor-map h2 {
+  }
+  .contenedor-map h2 {
+    font-size: 1.9rem;
     text-transform: uppercase;
     color: lightseagreen;
     position: relative;
     bottom: 30px;
+  }
+  .mapa {
+    flex-direction: column;
+  }
+  .mapa iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .contenedor-mapaDos {
+    padding: 10px;
+  }
+  .contenedor {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .imagen-one img {
+    width: 200px;
+    height: 200px;
+  }
+  .contenedor-flex img {
+    width: 150px;
+    height: 100px;
+  }
 }
-
-
-
-.mapa {
-    box-shadow: 0 0 10px black;
-    background-color: #04AA6D;
+@media (min-width: 601px) and (max-width: 1300px) {
+  .container-productos {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-    margin: 0px auto;
-}
-
-.contenedor-mapaDos {
+    flex-direction: column;
+  }
+  .filtro {
+    width: auto;
+  }
+  .filtro div {
+    display: inline;
+  }
+  .tienda {
+    margin: 0;
+  }
+  .productos img {
+    width: 150px;
+  }
+  .fila {
     display: flex;
-    justify-items: center;
-    padding: 20px;
-    text-align: center;
+    flex-direction: column;
+  }
+}
+@media (width: 901px) and (width: 1560px) {
+  .menuContactos img {
+    width: 600px;
+  }
 }
 
-.form-map {
-    font-size: 1.3rem;
-    padding: 20px;
-    background-color: #45a049;
-}
-
-
-
-@media (max-width: 600px) {
-
-    .titulo-baratos {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .productosBaratos {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .div-tarjetas {
-        padding: 10px;
-    }
-
-    .tarjeta-img img{
-        width: 100px;
-    }
-
-    .productosBaratos-hijo img{
-        width: 200px;
-    }
-    
-
-    .tarjeta-text {
-        text-align: center;
-        font-size: 0.9rem;
-    }
-    
-    .tarjeta-text span{
-        font-size: 0.5rem;
-        color: grey;
-    }
-    
-    .tarjeta-central {
-        text-align: center;
-
-    }
-
-    /* configurando el main */
-
-    .main-index {
-        padding: 0;
-        margin-top: 70px;
-        font-size: 0.9rem;
-    }
-    
-    .productos span {
-        width: 100px;
-        height: 200px;
-    }
-
-    .productos img {
-        width: 80px;
-        height: 100px;
-    }
-
-    .publicidad {
-        display: flex;
-        flex-direction: center;
-    }
-
-    .publicidad img {
-        width: 100px;
-    }
-
-    .publicidad-textUno {
-        font-size: 1.4rem;
-    }
-
-    .publicidad-textDos {
-        font-size: 0.8rem;
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
-
-    /* pagina productos */
-
-    .container-productos{
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .filtro {
-        width: auto;
-        border-radius: 5px;
-        padding: 10px;
-        box-shadow: 0 0 3px black;
-    }
-
-    .filtro  div {
-        display: inline;
-    }
-
-    .tienda {
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .video iframe{
-        width: 500px;
-    }
-
-    /* pagina de mapa */
-
-    .contenedor-map {
-        flex-direction: column;
-    }
-
-    .contenedor-mapaDos{
-        padding: 0;
-    }
-
-    .mapa {
-        flex-direction: column;
-    }
-
-    .mapa iframe{
-        width: 300px;
-        height: 200px;
-    }
-
-
-    /* pagina de contactos */
-
-
-    .container-contactos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .caja {
-        border: solid greenyellow 2px;
-    }
-
-
-    /* pagina de blog */
-
-    
-    .imagen-one img {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .contenedor-flex img {
-        width: 100px;
-        height: 75px;
-    }
-}
-
-@media (min-width: 601px ) and (max-width: 915px){
-
-    .tarjeta-text {
-        text-align: center;
-        font-size: 0.9rem;
-    }
-
-    .titulo-baratos {
-        margin: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    .productosBaratos {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .div-tarjetas {
-        padding: 10px;
-    }
-
-    .tarjeta-img img{
-        width: 100px;
-    }
-
-    .productosBaratos-hijo img{
-        width: 200px;
-    }
-    
-
-    .tarjeta-text {
-        text-align: center;
-        font-size: 0.9rem;
-    }
-    
-    .tarjeta-text span{
-        font-size: 0.5rem;
-        color: grey;
-    }
-    
-    .tarjeta-central {
-        text-align: center;
-
-    }
-
-    /* configurando el main */
-
-    .main-index {
-        padding: 0;
-        margin-top: 70px;
-        font-size: 0.9rem;
-    }
-    
-    .productos div img{
-        width: 120px;
-        height: 200px;
-    }
-
-
-
-    .publicidad {
-        display: flex;
-        flex-direction: center;
-    }
-
-    .publicidad img {
-        width: 200px;
-    }
-
-    footer {
-        font-size: 0.7rem;
-    }
-
-    /* pagina de mapa */
-    
-    .contenedor-map img {
-        width: 250px;
-        height: auto;
-    }
-    
-    .contenedor-map h2 {
-        font-size: 1.9rem;
-        text-transform: uppercase;
-        color: lightseagreen;
-        position: relative;
-        bottom: 30px;
-    }
-    
-    
-    
-    .mapa {
-        flex-direction: column;
-    }
-
-    .mapa iframe{
-        width: 300px;
-        height: 300px;
-    }
-    
-    .contenedor-mapaDos {
-        padding: 10px;
-    }
-
-    /* pagina de blog  */
-
-    .contenedor {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    .imagen-one img {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .contenedor-flex img {
-        width: 150px;
-        height: 100px;
-    }
-    
-
-}
-
-
-@media (min-width:601px) and (max-width: 1300px){
-
-    .container-productos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .filtro {
-        width: auto;
-
-    }
-
-    .filtro  div {
-        display: inline;
-    }
-
-    .tienda {
-        margin: 0;
-    }
-
-    .productos img{
-        width: 150px;
-    }
-
-    /* pagina de contactos */
-
-    .fila {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (width:901px) and (width:1560px) {
-    
-    .menuContactos img {
-        width: 600px;
-    }
-
-}
-
-
-
+/*# sourceMappingURL=estilo.css.map */

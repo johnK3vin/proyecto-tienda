@@ -1,0 +1,42 @@
+// estilos de la pagina mapa
+
+.main-mapa {
+  background-color: $background-color_12;
+  padding: 50px;
+  border: inset 5px green;
+}
+.contenedor-map {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    width: 350px;
+    height: auto;
+  }
+  h2 {
+    text-transform: uppercase;
+    color: $color_4;
+    position: relative;
+    bottom: 30px;
+  }
+}
+.mapa {
+  box-shadow: 0 0 10px black;
+  background-color: $background-color_7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px;
+  margin: 0px auto;
+}
+.contenedor-mapaDos {
+  display: flex;
+  justify-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.form-map {
+  font-size: 1.3rem;
+  padding: 20px;
+  background-color: $background-color_8;
+}

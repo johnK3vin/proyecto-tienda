@@ -1,0 +1,67 @@
+// estilos pagina de productos
+
+.filtro {
+  padding: 20px;
+  background-color: $background-color_10;
+  color: $color_1;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.resultados {
+  display: flex;
+  justify-content: center;
+  button {
+    border: none;
+    padding: 0;
+    &:active {
+      background-color: $background-color_11;
+    }
+  }
+}
+.filtro-hijo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filtro-input {
+  display: flex;
+  justify-content: start;
+  label {
+    margin-left: 20px;
+  }
+  select {
+    padding: 0;
+    width: 100px;
+  }
+}
+.main-productos {
+  padding-top: 88px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 96px;
+}
+.containerProductos {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.container-productos {
+  display: flex;
+  justify-content: center;
+}
+.video {
+  margin-top: 50px;
+  height: 400px;
+  background-color: $background-color_10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    position: relative;
+    bottom: 20px;
+    font-size: 1.5em;
+    color: $color_1;
+    text-shadow: 0 0 1px black;
+  }
+}

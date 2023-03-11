@@ -1,0 +1,60 @@
+// estilos de la pagina blog
+
+.imagen-blog {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  img {
+    width: 100%;
+    height: 400px;
+  }
+}
+.span-blog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color_1;
+  button {
+    a {
+      text-decoration: none;
+      color: $color_5;
+      font-size: 20px;
+      padding: 5px;
+    }
+    border: inset 3px lightseagreen;
+    background-color: $background-color_11;
+  }
+}
+.text {
+  font-size: 20px;
+  padding: 5px;
+}
+.dos {
+  font-size: 40px;
+  color: $color_4;
+}
+.tres {
+  font-style: italic;
+}
+.contenedor {
+  background-color: $background-color_11;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+.imagen-one {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.contenedor-flex {
+  img {
+    width: 300px;
+    height: 150px;
+  }
+}

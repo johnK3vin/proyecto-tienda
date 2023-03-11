@@ -1,0 +1,260 @@
+// media
+
+
+@media (max-width: 600px) {
+  .titulo-baratos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .productosBaratos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .div-tarjetas {
+    padding: 10px;
+  }
+  .tarjeta-img {
+    img {
+      width: 100px;
+    }
+  }
+  .productosBaratos-hijo {
+    img {
+      width: 200px;
+    }
+  }
+  .tarjeta-text {
+    text-align: center;
+    font-size: 0.9rem;
+    span {
+      font-size: 0.5rem;
+      color: $color_2;
+    }
+  }
+  .tarjeta-central {
+    text-align: center;
+  }
+  .main-index {
+    padding: 0;
+    margin-top: 70px;
+    font-size: 0.9rem;
+  }
+  .productos {
+    img {
+      width: 80px;
+      height: 100px;
+    }
+  }
+  .publicidad {
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    img {
+      width: 200px;
+
+    }
+    div {
+      width: 400px;
+    }
+  }
+  .publicidad-textUno {
+    font-size: 1.4rem;
+  }
+  .publicidad-textDos {
+    font-size: 0.8rem;
+  }
+  .container-productos {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtro {
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 3px black;
+    div {
+      display: inline;
+    }
+  }
+  .tienda {
+    margin: 0;
+    flex-direction: column;
+  }
+  .video {
+    iframe {
+      width: 500px;
+    }
+  }
+  .contenedor-map {
+    flex-direction: column;
+  }
+  .contenedor-mapaDos {
+    padding: 0;
+  }
+  .mapa {
+    flex-direction: column;
+    iframe {
+      width: 300px;
+      height: 200px;
+    }
+  }
+  .container-contactos {
+    display: flex;
+    flex-direction: column;
+  }
+  .caja {
+    border: solid greenyellow 2px;
+  }
+  .imagen-one {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .contenedor-flex {
+    img {
+      width: 100px;
+      height: 75px;
+    }
+  }
+}
+
+@media (min-width: 601px) and (max-width: 915px) {
+  .tarjeta-text {
+    text-align: center;
+    font-size: 0.9rem;
+    text-align: center;
+    font-size: 0.9rem;
+    span {
+      font-size: 0.5rem;
+      color: $color_2;
+    }
+  }
+  .titulo-baratos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .productosBaratos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .div-tarjetas {
+    padding: 10px;
+  }
+  .tarjeta-img {
+    img {
+      width: 100px;
+    }
+  }
+  .productosBaratos-hijo {
+    img {
+      width: 200px;
+    }
+  }
+  .tarjeta-central {
+    text-align: center;
+  }
+  .main-index {
+    padding: 0;
+    margin-top: 70px;
+    font-size: 0.9rem;
+  }
+  .productos {
+    div {
+      img {
+        width: 120px;
+        height: 200px;
+      }
+    }
+  }
+  .publicidad {
+    display: flex;
+    flex-direction: center;
+    img {
+      width: 200px;
+    }
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  .contenedor-map {
+    img {
+      width: 250px;
+      height: auto;
+    }
+    h2 {
+      font-size: 1.9rem;
+      text-transform: uppercase;
+      color: $color_4;
+      position: relative;
+      bottom: 30px;
+    }
+  }
+  .mapa {
+    flex-direction: column;
+    iframe {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .contenedor-mapaDos {
+    padding: 10px;
+  }
+  .contenedor {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .imagen-one {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .contenedor-flex {
+    img {
+      width: 150px;
+      height: 100px;
+    }
+  }
+}
+@media (min-width: 601px) and (max-width: 1300px) {
+  .container-productos {
+    display: flex;
+    flex-direction: column;
+  }
+  .filtro {
+    width: auto;
+    div {
+      display: inline;
+    }
+  }
+  .tienda {
+    margin: 0;
+  }
+  .productos {
+    img {
+      width: 150px;
+    }
+  }
+  .fila {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width: 901px) and (width: 1560px) {
+  .menuContactos {
+    img {
+      width: 600px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// estilos de footer
+
+.redes {
+  P {
+    font-size: 2em;
+    text-align: left;
+    border-bottom: solid grey 2px;
+  }
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  p {
+    text-align: left;
+    margin-top: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: $color_1;
+  }
+  li {
+    margin-right: 15px;
+    display: inline;
+    list-style-type: none;
+  }
+}
+.menu-inferior {
+  li {
+    list-style-type: none;
+    border-bottom: solid grey 1px;
+  }
+  a {
+    color: $color_1;
+    text-decoration: none;
+    text-align: start;
+  }
+  ul {
+    padding: 0;
+  }
+}
+.footer-text {
+  margin: 20px;
+  width: 300px;
+}

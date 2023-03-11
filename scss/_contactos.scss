@@ -1,0 +1,98 @@
+// estilos de la pagina de contactos
+
+.main-contactos {
+  max-width: 1550px;
+}
+.presentacion-contactos {
+  position: relative;
+  display: inline-block;
+}
+.presentacion-animacion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-evenly;
+}
+.horario {
+  background-color: $background-color_6;
+  color: $color_1;
+  padding: 2rem;
+
+  h3 {
+    color: $background-color_2;
+  }
+
+  .telefono {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.container-contactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+select {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type="submit"] {
+  background-color: $background-color_7;
+  color: $color_1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: $background-color_8;
+  }
+}
+.caja {
+  width: 400px;
+  border-radius: 5px;
+  background-color: $background-color_9;
+  padding: 20px;
+}
+.col-1 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-2 {
+  width: 100%;
+  margin-top: 6px;
+}
+.fila {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

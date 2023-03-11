@@ -1,0 +1,122 @@
+// estilos de la pagina principal
+
+.titulo-productos {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $background-color_2;
+  padding: 15px;
+  color: $color_1;
+  img {
+    width: 40px;
+  }
+}
+.titulo-baratos {
+  display: flex;
+  justify-content: center;
+  span {
+    padding: 10px;
+    border: solid 2px #3a1078;
+    margin-left: 25px;
+  }
+}
+.productosBaratos {
+  margin-top: 20px;
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.div-tarjetas {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.productosBaratos-hijo {
+  img {
+    width: 300px;
+  }
+}
+.tarjetas {
+  margin: 10px;
+}
+.tarjeta-img {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 150px;
+  }
+}
+.tarjeta-text {
+  text-align: center;
+  span {
+    font-size: 0.9rem;
+    color: $color_2;
+  }
+}
+.tarjeta-central {
+  text-align: center;
+  text-transform: uppercase;
+}
+.buttom-tarjetas {
+  button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+  }
+}
+.productos {
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  div {
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: $background-color_3;
+    text-align: center;
+  }
+}
+.main-index {
+  padding: 24px;
+}
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px green;
+}
+.publicidad {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  background-color: $background-color_4;
+  height: 200px;
+  p {
+    width: 200px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  button {
+    border: none;
+    padding: 0;
+  }
+}
+.publicidad-textUno {
+  color: $color_3;
+  font-size: 2rem;
+  text-shadow: 0 1px 3px black;
+}
+.publicidad-textDos {
+  font-size: 1.2rem;
+}
