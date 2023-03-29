@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="blog de mouseshop">
     <meta name="keywords" content="blog, mouseshop, novedades, nuevo">
+    <title>Blog mouseshop</title>
+    <!-- estilos BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" a="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- mis estilos -->
     <link rel="stylesheet" href="../css/estilo.css">
-    <title>Blog mouseshop</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg estiloNav navbar-dark" aria-label="Offcanvas navbar large">
-        <div class="container-fluid">
-            <a class="navbar-brand estiloLink" href="index.html">MOUSESHOP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <form class="d-flex mt-3 mt-lg-0" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg></button>
-            </form>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg estiloNav navbar-dark" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+                <a class="navbar-brand estiloLink" href="index.html">MOUSESHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex mt-3 mt-lg-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+                </form>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="mapa.html">mapa</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contactos.html">contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="mapa.html">mapa</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="contactos.html">contactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                </ul>
             </div>
-          </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main>
+    <!-- main -->
+    <main class="main-blog">
         <div class="imagen-blog">
-            <img src="../img/imagen-blog.jpg" alt="">
+            <img src="../img/imagen-blog.jpg" alt="imagen de audifono ">
             <span class="span-blog">
                 <p class="text uno">Pronto!</p>
                 <p class="text dos">la mejor calidad de audio</p>
@@ -63,32 +69,31 @@
         </div>
 
         <div class="contenedor">
-            <div class="imagen-one">
-                <img src="../img/mouse-razer.jpg" alt="mouse-razer">
+            <div>
+                <img src="../img/logo-razer.png" alt="logo de marca razer">
+                <p>Razer es una marca líder en el mercado de productos de alta calidad para gamers, con una amplia gama de dispositivos y accesorios, como ratones, teclados, auriculares y portátiles diseñados específicamente para satisfacer las necesidades de los jugadores más exigentes. Con un enfoque en la innovación y la tecnología avanzada, Razer es una marca de confianza para aquellos que buscan un rendimiento superior en sus juegos.</p>
             </div>
-            <div class="contenedor-flex">
-                <div>
-                    <img src="../img/mouse-redragon.jpg" alt="mouse-redragon">
-                </div>
-                <div>
-                    <img src="../img/mouse-logitech.jpg" alt="mouse-logitech">
-                </div>
+            <div>
+                <img src="../img/logo-logitech.png" alt="logo marca logitech">
+                <p>Logitech es una marca reconocida a nivel mundial por sus productos de alta calidad en tecnología y electrónica de consumo. Con una amplia gama de dispositivos y accesorios, Logitech ofrece soluciones innovadoras para una variedad de necesidades, desde ratones y teclados hasta cámaras web y altavoces. Los productos de Logitech se destacan por su durabilidad, facilidad de uso y diseño elegante, y son una opción popular entre los jugadores, profesionales y usuarios cotidianos por igual.</p>
             </div>
-            <div class="imagen-one">
-                <img src="../img/reddragon.png" alt="redragon">
+            <div>
+                <img src="../img/reddragon.png" alt="logo de marca redragon">
+                <p>Redragon es una marca líder en el mercado de productos para juegos que se enfoca en brindar soluciones de alta calidad y asequibles para gamers de todos los niveles. Con una amplia gama de productos, como ratones, teclados, auriculares y sillas para juegos, Redragon se esfuerza por satisfacer las necesidades de los jugadores más exigentes. La marca se distingue por su enfoque en la innovación, la tecnología avanzada y el diseño ergonómico, lo que hace que sus productos sean una opción popular para los jugadores que buscan mejorar su experiencia de juego.</p>
             </div>
         </div>
 
         <div class="imagen-blog">
-            <img src="../img/imagen-blog.jpg" alt="">
+            <img src="../img/img-blogMapa.jpg" alt="imagen de mapa">
             <span class="span-blog">
-                <p class="text uno">Buscanos!</p>
-                <p class="text dos">Encuentra la tienda mas cercana</p>
+                <p class="text uno text-danger">Buscanos!</p>
+                <p class="text dos text-dark">Encuentra la tienda mas cercana</p>
                 <button><a href="mapa.html">Mapa</a></button>
             </span>
         </div>
     </main>
 
+    <!-- footer -->
     <footer>
         <div class="redes">
             <p>MOUSESHOP</p>
@@ -103,6 +108,7 @@
                     <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                   </svg></a></li>
             </ul>
+            <span>2023 Copyright ©</span>
         </div>
 
         <div class="menu-inferior">
@@ -115,17 +121,15 @@
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="mapa.html">Mapa</a></li>
-                    <li><a href="contactos.html">Con</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="footer-text">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam magni explicabo iure ea culpa tempora reiciendis porro delectus amet illum dicta magnam optio architecto, recusandae, rem eius necessitatibus quaerat.</p>
-        </div>
+
     </footer>
 
-
+    <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

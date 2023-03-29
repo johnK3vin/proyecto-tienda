@@ -38,20 +38,29 @@
 }
 .tarjetas {
   margin: 10px;
+  
 }
 .tarjeta-img {
   display: flex;
   justify-content: center;
   img {
     width: 150px;
+    height: 150px;
   }
 }
 .tarjeta-text {
   text-align: center;
   span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: $color_2;
   }
+  p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+}
+.price {
+  font-size: 2rem;
 }
 .tarjeta-central {
   text-align: center;
@@ -59,9 +68,15 @@
 }
 .buttom-tarjetas {
   button {
+    font-size: 1.5rem;
+    font-weight: bold;
     border-radius: 10px;
     border: none;
-    padding: 5px;
+    padding: 10px;
+    &:hover{
+      background-color: $color_6;
+      color: $color_1;
+    }
   }
 }
 .productos {
@@ -73,12 +88,34 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
   div {
     border-radius: 5px;
     margin-top: 5px;
     background-color: $background-color_3;
     text-align: center;
+    margin: 5px;
+    p {
+      font-size: 1.5rem;
+      font-weight: bolder;
+    }
+    button {
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      &:hover{
+        background-color: green;
+        color: white;
+      }
+    }
+    .after-oferta {
+      text-decoration: line-through;
+    }
+    .oferta {
+      font-size: 2rem;
+      color: $color_6;
+    }
   }
 }
 .main-index {
@@ -88,35 +125,39 @@
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0 0 2px green;
+  h2 {
+    font-size: 3rem;
+    color: $background-color_2;
+  }
 }
-.publicidad {
-  img {
-    width: 200px;
+.container-publicidad {
+  padding-left: 150px;
+  padding-right: 150px;
+  .publicidad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $background-color_2;
     height: 200px;
-  }
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  position: relative;
-  background-color: $background-color_4;
-  height: 200px;
-  p {
-    width: 200px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-  button {
-    border: none;
-    padding: 0;
+    p {
+
+      text-transform: uppercase;
+      margin: 0;
+    }
+    img {
+      width: 500px;
+      height: 200px;
+    }
+    a {
+      @include ancla;
+      color: $color_1;
+      font-size: 1.5rem;
+    }
   }
 }
 .publicidad-textUno {
-  color: $color_3;
-  font-size: 2rem;
+  color: $color_1;
+  font-size: 3rem;
   text-shadow: 0 1px 3px black;
-}
-.publicidad-textDos {
-  font-size: 1.2rem;
 }

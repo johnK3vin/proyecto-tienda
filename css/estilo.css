@@ -10,10 +10,10 @@ html {
 }
 html body {
   font-family: "Playfair Display", serif;
-  background-color: #ccc;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 }
-html body header {
-  padding: 25px;
+html body nav li {
+  font-size: 1.3rem;
 }
 html body button {
   padding: 1rem;
@@ -43,38 +43,45 @@ html body footer {
 }
 
 .redes {
+  text-align: center;
   margin: 20px;
   display: flex;
   flex-direction: column;
   width: 200px;
 }
-.redes P {
-  font-size: 2em;
-  text-align: left;
-  border-bottom: solid grey 2px;
-}
 .redes p {
-  text-align: left;
   margin-top: 10px;
+  font-size: 3em;
 }
 .redes a {
   text-decoration: none;
   color: white;
+}
+.redes a:hover {
+  color: red;
 }
 .redes li {
   margin-right: 15px;
   display: inline;
   list-style-type: none;
 }
+.redes span {
+  font-size: 0.9rem;
+}
 
+.menu-inferior {
+  font-size: 1.2rem;
+}
 .menu-inferior li {
   list-style-type: none;
-  border-bottom: solid grey 1px;
 }
 .menu-inferior a {
   color: white;
   text-decoration: none;
   text-align: start;
+}
+.menu-inferior a:hover {
+  color: lightseagreen;
 }
 .menu-inferior ul {
   padding: 0;
@@ -134,14 +141,23 @@ html body footer {
 }
 .tarjeta-img img {
   width: 150px;
+  height: 150px;
 }
 
 .tarjeta-text {
   text-align: center;
 }
 .tarjeta-text span {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: grey;
+}
+.tarjeta-text p {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 2rem;
 }
 
 .tarjeta-central {
@@ -150,16 +166,21 @@ html body footer {
 }
 
 .buttom-tarjetas button {
+  font-size: 1.5rem;
+  font-weight: bold;
   border-radius: 10px;
   border: none;
-  padding: 5px;
+  padding: 10px;
+}
+.buttom-tarjetas button:hover {
+  background-color: green;
+  color: white;
 }
 
 .productos {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
 }
 .productos img {
   width: 200px;
@@ -171,6 +192,29 @@ html body footer {
   margin-top: 5px;
   background-color: aliceblue;
   text-align: center;
+  margin: 5px;
+}
+.productos div p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.productos div button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.productos div button:hover {
+  background-color: green;
+  color: white;
+}
+.productos div .after-oferta {
+  text-decoration: line-through;
+}
+.productos div .oferta {
+  font-size: 2rem;
+  color: green;
 }
 
 .main-index {
@@ -182,55 +226,77 @@ html body footer {
   text-transform: uppercase;
   text-shadow: 0 0 2px green;
 }
+.titulo h2 {
+  font-size: 3rem;
+  color: #3A1078;
+}
 
-.publicidad {
+.container-publicidad {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.container-publicidad .publicidad {
   display: flex;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  position: relative;
-  background-color: #bac8ed;
+  background-color: #3A1078;
   height: 200px;
 }
-.publicidad img {
-  width: 200px;
-  height: 200px;
-}
-.publicidad p {
-  width: 200px;
+.container-publicidad .publicidad p {
   text-transform: uppercase;
   margin: 0;
 }
-.publicidad button {
-  border: none;
-  padding: 0;
+.container-publicidad .publicidad img {
+  width: 500px;
+  height: 200px;
+}
+.container-publicidad .publicidad a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .publicidad-textUno {
-  color: brown;
-  font-size: 2rem;
+  color: white;
+  font-size: 3rem;
   text-shadow: 0 1px 3px black;
 }
 
-.publicidad-textDos {
-  font-size: 1.2rem;
+.main-contactos {
+  padding: 5rem;
+}
+.main-contactos h1 {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 3rem;
 }
 
-.main-contactos {
-  max-width: 1550px;
+.contactos-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contactos-text div {
+  max-width: 300px;
+  max-height: 230px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+  background-color: #3A1078;
+  margin: 1rem;
+  box-shadow: 0 2px 2px red;
 }
 
 .presentacion-contactos {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .presentacion-animacion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-evenly;
 }
@@ -239,20 +305,23 @@ html body footer {
   background-color: red;
   color: white;
   padding: 2rem;
+  width: 150px;
+  margin: 10px;
+  font-size: 1.5rem;
 }
 .horario h3 {
   color: #3A1078;
+  font-weight: 800;
+  font-size: 2.4rem;
 }
 .horario .telefono a {
   text-decoration: none;
   color: white;
 }
 
-.container-contactos {
+.contenedor-contactos {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 input[type=text] {
@@ -296,11 +365,19 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.contenedor-horario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .caja {
-  width: 400px;
+  width: 500px;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .col-1 {
@@ -321,41 +398,99 @@ input[type=submit]:hover {
 }
 
 .filtro {
-  padding: 20px;
+  max-width: 100%;
+  height: min-content;
   background-color: #2F58CD;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.filtro h1 {
   color: white;
-  border-radius: 5px;
-  margin-right: 10px;
+  font-weight: 900;
+  font-size: 4rem;
 }
-
-.resultados {
+.filtro div {
+  margin-bottom: 5px;
+}
+.filtro .filtro-name {
+  padding: 0 20px;
+  position: relative;
+}
+.filtro .filtro-name span {
+  font-weight: bolder;
+  color: white;
+  display: block;
+  margin: 10px;
+}
+.filtro .filtro-name div {
   display: flex;
+  flex-flow: row-reverse;
   justify-content: center;
 }
-.resultados button {
+.filtro .filtro-name div input {
+  padding: 0 35px 0 20px;
+  background-color: #3A1078;
+  color: white;
   border: none;
-  padding: 0;
 }
-.resultados button:active {
-  background-color: black;
+.filtro .filtro-name div path {
+  color: white;
+}
+.filtro .filtro-price {
+  padding: 0 20px;
+}
+.filtro .filtro-price span {
+  font-weight: bolder;
+  color: white;
+  display: block;
+  margin: 10px;
+}
+.filtro .filtro-price div {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+.filtro .filtro-price div input {
+  width: 70px;
+  border: none;
+  background-color: #3A1078;
+  color: white;
+}
+.filtro .filtro-price div strong {
+  margin: 5px;
+}
+.filtro .filtro-pais {
+  padding: 0 20px;
+}
+.filtro .filtro-pais span {
+  font-weight: bolder;
+  color: white;
+  display: block;
+  margin: 10px;
+}
+.filtro .filtro-pais div {
+  padding-left: 20px;
+}
+.filtro .filtro-pais select {
+  color: white;
+  background-color: #3A1078;
+  border: none;
+  width: 150px;
 }
 
-.filtro-hijo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.menu-filtro {
+  display: none;
 }
 
-.filtro-input {
+.container-filtro {
   display: flex;
-  justify-content: start;
 }
-.filtro-input label {
-  margin-left: 20px;
-}
-.filtro-input select {
-  padding: 0;
-  width: 100px;
+.container-filtro .cerrar-menu {
+  display: none;
+  width: 20px;
+  height: 20px;
 }
 
 .main-productos {
@@ -372,24 +507,60 @@ input[type=submit]:hover {
 
 .container-productos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .video {
   margin-top: 50px;
-  height: 400px;
-  background-color: #2F58CD;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 .video p {
-  position: relative;
-  bottom: 20px;
-  font-size: 1.5em;
+  font-size: 2rem;
+  font-weight: 800;
   color: white;
   text-shadow: 0 0 1px black;
+  margin-right: 30px;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dos {
+  font-size: 3rem;
+  color: lightseagreen;
+}
+
+.tres {
+  font-style: italic;
+}
+
+.contenedor {
+  background-color: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.contenedor img {
+  width: 200px;
+  height: 200px;
+}
+.contenedor div {
+  padding: 5px;
+  width: 300px;
+  word-wrap: break-word;
+}
+.contenedor p {
+  padding-top: 10px;
 }
 
 .imagen-blog {
@@ -412,8 +583,7 @@ input[type=submit]:hover {
   color: white;
 }
 .span-blog button {
-  border: inset 3px lightseagreen;
-  background-color: black;
+  border: none;
 }
 .span-blog button a {
   text-decoration: none;
@@ -421,37 +591,8 @@ input[type=submit]:hover {
   font-size: 20px;
   padding: 5px;
 }
-
-.text {
-  font-size: 20px;
-  padding: 5px;
-}
-
-.dos {
-  font-size: 40px;
-  color: lightseagreen;
-}
-
-.tres {
-  font-style: italic;
-}
-
-.contenedor {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.imagen-one img {
-  width: 300px;
-  height: 300px;
-}
-
-.contenedor-flex img {
-  width: 300px;
-  height: 150px;
+.span-blog button:hover {
+  background-color: #04AA6D;
 }
 
 .main-mapa {
@@ -464,6 +605,8 @@ input[type=submit]:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 .contenedor-map img {
   width: 350px;
@@ -474,6 +617,8 @@ input[type=submit]:hover {
   color: lightseagreen;
   position: relative;
   bottom: 30px;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .mapa {
@@ -494,11 +639,96 @@ input[type=submit]:hover {
 }
 
 .form-map {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 800;
   padding: 20px;
   background-color: #45a049;
 }
 
+@media (max-width: 500px) {
+  .contenedor-contactos {
+    flex-flow: column-reverse;
+  }
+  .titulo-baratos {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .productosBaratos {
+    position: relative;
+    top: 150px;
+  }
+  .div-tarjetas {
+    flex-flow: row wrap;
+    padding: 10px;
+  }
+  .container-main {
+    position: relative;
+    top: 400px;
+  }
+  .productos {
+    flex-flow: row wrap;
+  }
+  .titulo {
+    position: relative;
+    top: 400px;
+  }
+  .titulo h2 {
+    font-size: 2rem;
+  }
+  .container-publicidad {
+    position: relative;
+    top: 400px;
+  }
+  .footer-index {
+    position: relative;
+    top: 430px;
+  }
+  .container-publicidad {
+    padding: 0;
+  }
+  .container-publicidad .publicidad {
+    flex-direction: column-reverse;
+    height: 250px;
+  }
+  .container-publicidad .publicidad div {
+    max-width: 100%;
+  }
+  .container-publicidad .publicidad img {
+    max-width: 100%;
+  }
+  .main-productos {
+    padding: 50px 0 50px 0;
+  }
+  .containerProductos {
+    padding: 0;
+  }
+  .filtro h1 {
+    font-size: 2rem;
+  }
+  .video {
+    flex-direction: column;
+  }
+  .video iframe {
+    max-width: 100%;
+  }
+  .main-mapa {
+    padding: 10px;
+  }
+  .contenedor-map img {
+    width: 200px;
+  }
+  .contenedor-map div {
+    padding-top: 10px;
+  }
+  .contenedor-mapaDos {
+    display: block;
+  }
+  .fila {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
 @media (max-width: 600px) {
   .titulo-baratos {
     margin: 0;
@@ -565,12 +795,43 @@ input[type=submit]:hover {
   }
   .filtro {
     width: auto;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 3px black;
+    display: flex;
   }
-  .filtro div {
-    display: inline;
+  .container-filtro {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2F58CD;
+  }
+  .container-filtro .cerrar-menu {
+    border: none;
+    padding: 0;
+    display: block;
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+  .container-filtro .filtro-pais select {
+    width: auto;
+  }
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .notvisible {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu-filtro {
+    display: block;
+    background-color: #3A1078;
+  }
+  .menu-filtro svg {
+    color: white;
   }
   .tienda {
     margin: 0;
@@ -598,17 +859,26 @@ input[type=submit]:hover {
   }
   .caja {
     border: solid greenyellow 2px;
+    width: auto;
   }
   .imagen-one img {
     width: 150px;
     height: 150px;
   }
-  .contenedor-flex img {
-    width: 100px;
-    height: 75px;
+  .contenedor {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-contactos {
+    flex-flow: column-reverse;
   }
 }
 @media (min-width: 601px) and (max-width: 915px) {
+  .contenedor-contactos {
+    flex-flow: column-reverse;
+  }
   .tarjeta-text {
     text-align: center;
     font-size: 0.9rem;
@@ -653,12 +923,9 @@ input[type=submit]:hover {
     width: 120px;
     height: 200px;
   }
-  .publicidad {
-    display: flex;
-    flex-direction: center;
-  }
-  .publicidad img {
-    width: 200px;
+  .container-publicidad {
+    padding-left: 100px;
+    padding-right: 100px;
   }
   footer {
     font-size: 0.7rem;
@@ -687,14 +954,17 @@ input[type=submit]:hover {
   .contenedor {
     padding-left: 40px;
     padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
   }
-  .imagen-one img {
-    width: 200px;
-    height: 200px;
+  .filtro {
+    flex-wrap: wrap;
   }
-  .contenedor-flex img {
-    width: 150px;
-    height: 100px;
+}
+@media (width: 916px) and (width: 1200px) {
+  .container-publicidad {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 @media (min-width: 601px) and (max-width: 1300px) {
@@ -702,11 +972,20 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
   }
-  .filtro {
-    width: auto;
+  .container-filtro {
+    flex-direction: row;
   }
-  .filtro div {
-    display: inline;
+  .container-filtro .filtro-name {
+    border: none;
+  }
+  .container-filtro .filtro-price {
+    border: none;
+  }
+  .container-filtro .filtro-pais {
+    border: none;
+  }
+  .container-filtro .filtro-pais select {
+    width: auto;
   }
   .tienda {
     margin: 0;

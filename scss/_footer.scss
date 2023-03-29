@@ -1,38 +1,44 @@
 // estilos de footer
 
 .redes {
-  P {
-    font-size: 2em;
-    text-align: left;
-    border-bottom: solid grey 2px;
-  }
+  text-align: center;
   margin: 20px;
   display: flex;
   flex-direction: column;
   width: 200px;
   p {
-    text-align: left;
     margin-top: 10px;
+    font-size: 3em;
   }
   a {
     text-decoration: none;
     color: $color_1;
+    &:hover{
+      color: $color_5;
+    }
   }
   li {
     margin-right: 15px;
     display: inline;
     list-style-type: none;
   }
+  span {
+    font-size: 0.9rem;
+
+  }
 }
 .menu-inferior {
+  font-size: 1.2rem;
   li {
     list-style-type: none;
-    border-bottom: solid grey 1px;
   }
   a {
     color: $color_1;
     text-decoration: none;
     text-align: start;
+    &:hover {
+      color: $color_4;
+    }
   }
   ul {
     padding: 0;

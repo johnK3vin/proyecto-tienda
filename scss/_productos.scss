@@ -1,38 +1,94 @@
 // estilos pagina de productos
 
-.filtro {
-  padding: 20px;
-  background-color: $background-color_10;
+
+@mixin span {
+  font-weight: bolder;
   color: $color_1;
-  border-radius: 5px;
-  margin-right: 10px;
+  display: block;
+  margin: 10px;
 }
-.resultados {
+.filtro {
+  max-width: 100%;
+  height: min-content;
+  background-color: $background-color_10;
+  font-size: 1.6rem;
   display: flex;
-  justify-content: center;
-  button {
-    border: none;
-    padding: 0;
-    &:active {
-      background-color: $background-color_11;
+  justify-content: space-evenly;
+  align-items: center;
+  h1 {
+    color: $color_1;
+    font-weight: 900;
+    font-size: 4rem;
+  }
+  div {
+    margin-bottom: 5px;
+  }
+  .filtro-name{
+    padding: 0 20px;
+    position: relative;
+    span {
+      @include span;
+    }
+    div{
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: center;
+      input{
+        padding: 0 35px 0 20px;
+        background-color: $background-color_2;
+        color: $color_1;
+        border: none;
+      }
+      path {
+        color: $color_1;
+      }
+    }
+  }
+  .filtro-price{
+    padding: 0 20px;
+    span {
+      @include span;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      padding: 0 20px 0 20px;
+      input {
+        width: 70px;
+        border: none;
+        background-color: $background-color_2;
+        color: $color_1;
+      }
+      strong{
+        margin: 5px;
+      }
+    }
+  }
+  .filtro-pais {
+    padding: 0 20px;
+    span {
+      @include span;
+    }
+    div {
+      padding-left: 20px;
+    }
+    select {
+      color: $color_1;
+      background-color: $background-color_2;
+      border: none;
+      width: 150px;
     }
   }
 }
-.filtro-hijo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.menu-filtro{
+  display: none;
 }
-
-.filtro-input {
+.container-filtro {
   display: flex;
-  justify-content: start;
-  label {
-    margin-left: 20px;
-  }
-  select {
-    padding: 0;
-    width: 100px;
+  .cerrar-menu {
+    display: none;
+    width: 20px;
+    height: 20px;
   }
 }
 .main-productos {
@@ -47,21 +103,20 @@
 }
 .container-productos {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .video {
   margin-top: 50px;
-  height: 400px;
-  background-color: $background-color_10;
+  background: $background-gradiante_1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 50px;
   p {
-    position: relative;
-    bottom: 20px;
-    font-size: 1.5em;
+    font-size: 2rem;
+    font-weight: 800;
     color: $color_1;
     text-shadow: 0 0 1px black;
+    margin-right: 30px;
   }
 }

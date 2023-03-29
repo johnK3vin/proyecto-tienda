@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-weight: 800;
+  font-size: 1.5rem;
   img {
     width: 350px;
     height: auto;
@@ -18,7 +20,10 @@
     color: $color_4;
     position: relative;
     bottom: 30px;
+    font-size: 3rem;
+    font-weight: 800;
   }
+
 }
 .mapa {
   box-shadow: 0 0 10px black;
@@ -36,7 +41,8 @@
   text-align: center;
 }
 .form-map {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
+  font-weight: 800;
   padding: 20px;
   background-color: $background-color_8;
 }

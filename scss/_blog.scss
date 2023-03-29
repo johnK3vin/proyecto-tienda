@@ -1,5 +1,39 @@
 // estilos de la pagina blog
 
+
+.text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.dos {
+  font-size: 3rem;
+  color: $color_4;
+}
+.tres {
+  font-style: italic;
+}
+.contenedor {
+  background-color: $background-gradiante_3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $color_1;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  div{
+    padding: 5px;
+    width: 300px;
+    word-wrap: break-word;
+  }
+  p {
+    padding-top: 10px;
+  }
+}
 .imagen-blog {
   position: relative;
   display: inline-block;
@@ -24,37 +58,9 @@
       font-size: 20px;
       padding: 5px;
     }
-    border: inset 3px lightseagreen;
-    background-color: $background-color_11;
-  }
-}
-.text {
-  font-size: 20px;
-  padding: 5px;
-}
-.dos {
-  font-size: 40px;
-  color: $color_4;
-}
-.tres {
-  font-style: italic;
-}
-.contenedor {
-  background-color: $background-color_11;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-.imagen-one {
-  img {
-    width: 300px;
-    height: 300px;
-  }
-}
-.contenedor-flex {
-  img {
-    width: 300px;
-    height: 150px;
+    border: none;
+    &:hover {
+      background-color: $background-color_7;
+    }
   }
 }

@@ -1,29 +1,52 @@
 // estilos de la pagina de contactos
 
 .main-contactos {
-  max-width: 1550px;
+  padding: 5rem;
+  h1 {
+    text-align: center;
+    color: $color_1;
+    font-weight: 800;
+    font-size: 3rem;
+  }
 }
-.presentacion-contactos {
-  position: relative;
-  display: inline-block;
+
+.contactos-text{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  div {
+    max-width: 300px;
+    max-height: 230px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: $color_1;
+    background-color: $background-color_2;
+    margin: 1rem;
+    box-shadow: 0 2px 2px red;
+  }
+}
+.presentacion-contactos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .presentacion-animacion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-evenly;
 }
+
 .horario {
   background-color: $background-color_6;
   color: $color_1;
   padding: 2rem;
-
+  width: 150px;
+  margin: 10px;
+  font-size: 1.5rem;
   h3 {
     color: $background-color_2;
+    font-weight: 800;
+    font-size: 2.4rem;
   }
-
   .telefono {
     a {
       text-decoration: none;
@@ -31,13 +54,11 @@
     }
   }
 }
-
-.container-contactos {
+.contenedor-contactos{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
+
 input[type="text"] {
   width: 70%;
   padding: 12px;
@@ -74,11 +95,18 @@ input[type="submit"] {
     background-color: $background-color_8;
   }
 }
+.contenedor-horario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .caja {
-  width: 400px;
+  width: 500px;
   border-radius: 5px;
   background-color: $background-color_9;
   padding: 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 .col-1 {
   float: left;
